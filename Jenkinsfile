@@ -1,11 +1,12 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM('* * * * *')
-    }
     stages {
         stage('Build') {
             steps {
+                sh """
+                    git reset --hard
+                    git pull origin master
+                """
                 sh """
                     echo 'Build'
                     cd src
