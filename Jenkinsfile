@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh """
                     echo 'Build'
-                    cd MedBot/src/Methods
+                    cd src
                     javac MedBot.java
                 """
             }
