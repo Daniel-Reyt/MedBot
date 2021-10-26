@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06e1b763-62d2-445f-ae44-19b45eb879de" name="Changes" comment="modify jenkins for step build">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="06e1b763-62d2-445f-ae44-19b45eb879de" name="Changes" comment="modify jenkins for step build and Branch">
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635237634567</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify jenkins for step build and Branch">
+      <created>1635237868406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635237868406</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +110,7 @@
     <MESSAGE value="add jenkins" />
     <MESSAGE value="modify name of jenkins" />
     <MESSAGE value="modify jenkins for step build" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify jenkins for step build" />
+    <MESSAGE value="modify jenkins for step build and Branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify jenkins for step build and Branch" />
   </component>
 </project>

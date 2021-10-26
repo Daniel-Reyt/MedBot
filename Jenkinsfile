@@ -1,15 +1,9 @@
 pipeline {
     agent any
-
+    triggers {
+        pollSCM('* * * * *')
+    }
     stages {
-        stage('Branch') {
-            steps {
-                sh """
-                    git clone https://github.com/Daniel-Reyt/MedBot.git
-                    git checkout origin master
-                """
-            }
-        }
         stage('Build') {
             steps {
                 sh """
