@@ -1,5 +1,3 @@
-package Methods;
-
 import classes.LadderOfHurt;
 
 import java.io.IOException;
