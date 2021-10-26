@@ -7,7 +7,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh """
-                    echo 'build'
+                    echo 'Build'
+                    javac MedBot.java
                 """
             }
         }
