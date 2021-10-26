@@ -1,0 +1,37 @@
+
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8İÒ¥ŞË/
+>	java:S131""Add a default case to this switch.(°÷Íî8ßÒ¥ŞË/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ğ¯˜Ü8áÒ¥ŞË/
+C	java:S131 ""Add a default case to this switch.(æ½ÄÚøÿÿÿÿ8ãÒ¥ŞË/
+U	java:S106""9Replace this use of System.out or System.err by a logger.(Õ™î¤8äÒ¥ŞË/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(¿¨ÿìıÿÿÿÿ8æÒ¥ŞË/
+>	java:S131.""Add a default case to this switch.(à«À8éÒ¥ŞË/
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(„ı†Ô8ëÒ¥ŞË/
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(ò…û·8óÒ¥ŞË/
+U	java:S106?"9Replace this use of System.out or System.err by a logger.(Ş¥±Ù8øÒ¥ŞË/
+Z	java:S106A"9Replace this use of System.out or System.err by a logger.(‚¹ãªûÿÿÿÿ8úÒ¥ŞË/
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(ù«­»ùÿÿÿÿ8ûÒ¥ŞË/
+U	java:S106I"9Replace this use of System.out or System.err by a logger.(üİ€Ÿ8ıÒ¥ŞË/
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(’ÆéŸ8ıÒ¥ŞË/
+U	java:S106L"9Replace this use of System.out or System.err by a logger.(ö‡«‚8şÒ¥ŞË/
+C	java:S131N""Add a default case to this switch.(½…Øûÿÿÿÿ8şÒ¥ŞË/
+Z	java:S106o"9Replace this use of System.out or System.err by a logger.(ø—†Ãıÿÿÿÿ8‚Ó¥ŞË/
+X
+java:S1068"6Remove this unused "listOfLadderOfHurt" private field.(ççØãÿÿÿÿÿ8ƒÓ¥ŞË/
+S
+java:S1068"1Remove this unused "ladderOfHurt1" private field.(“ººùÿÿÿÿ8ƒÓ¥ŞË/
+M
+java:S1068"1Remove this unused "ladderOfHurt2" private field.(Î¥”"8ƒÓ¥ŞË/
+N
+java:S1068"1Remove this unused "ladderOfHurt3" private field.(ƒğà”8„Ó¥ŞË/
+e
+java:S62080"CMerge the previous cases into this one using comma-separated label.(Úûû„şÿÿÿÿ8‰Ó¥ŞË/
+
+java:S1192?"qDefine a constant instead of duplicating this literal "ok je vÃ©rifie les donnÃ©es sur cette douleur : " 4 times.(Ş¥±Ù8ŠÓ¥ŞË/
+h
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(°÷Íî8‹Ó¥ŞË/
+m
+java:S1301 "KReplace this "switch" statement by "if" statements to increase readability.(æ½ÄÚøÿÿÿÿ8‹Ó¥ŞË/
+7
+java:S1220""Move this file to a named package.8¹ß¦ŞË/
