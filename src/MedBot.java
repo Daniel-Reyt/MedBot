@@ -1,3 +1,5 @@
+import classes.DiagnostiqueDialog;
+import classes.HeadDialog;
 import classes.LadderOfHurt;
 
 import java.io.IOException;
@@ -12,12 +14,27 @@ public class MedBot {
     private List<LadderOfHurt> listOfLadderOfHurt = new ArrayList<>();
 
     private LadderOfHurt ladderOfHurt1 = new LadderOfHurt(new ArrayList<Integer>(Arrays.asList(1, 2, 3)), 0);
-
     private LadderOfHurt ladderOfHurt2 = new LadderOfHurt(new ArrayList<Integer>(Arrays.asList(4, 5, 6)), 1);
-
     private LadderOfHurt ladderOfHurt3 = new LadderOfHurt(new ArrayList<Integer>(Arrays.asList(7, 8, 9)), 2);
 
+    private static HeadDialog headDialog;
+    private static DiagnostiqueDialog diagnostiqueDialog;
+
     public static void main(String[] args) throws IOException {
+        headDialog = new HeadDialog() {
+            @Override
+            public void diagnostiqueHead(String locationHurtForHead, Integer level) {
+                HeadDialog.super.diagnostiqueHead(locationHurtForHead, level);
+            }
+        };
+
+        diagnostiqueDialog = new DiagnostiqueDialog() {
+            @Override
+            public void diagnostique(String locationHurt, HeadDialog headDialog) {
+                DiagnostiqueDialog.super.diagnostique(locationHurt, headDialog);
+            }
+        };
+
         String responseMainQuestion = "";
         String callBot = input.nextLine();
         switch (callBot) {
@@ -33,81 +50,11 @@ public class MedBot {
             case "diagnostique":
                 System.out.println("ou avez vous mal ?");
                 String responseLocationHurt = input.nextLine();
-                diagnostique(responseLocationHurt);
+                diagnostiqueDialog.diagnostique(responseLocationHurt, headDialog);
                 break;
             case "annuler":
                 System.out.println("Daccord j'annule votre demande");
                 break;
         }
-    }
-
-    public static void diagnostique(String locationHurt) {
-        String responseLocationHurtForHead = "";
-        switch (locationHurt) {
-            case "tete":
-            case "tête":
-                System.out.println("ou avez vous mal : (avant, arriere, autre ?)");
-                responseLocationHurtForHead = input.nextLine();
-                diagnostiqueHead(responseLocationHurtForHead, null);
-                break;
-            case "ventre":
-                System.out.println("ou avez vous mal : (estomac, vessie, autre ?)");
-                String responseLocationHurtForStomach = input.nextLine();
-                diagnostiqueStomach(responseLocationHurtForStomach, null);
-                break;
-        }
-    }
-
-    private static void diagnostiqueStomach(String locationHurtForStomach, Integer level) {
-        if (level != null) {
-            System.out.println("ok je vérifie les données sur cette douleur : " + locationHurtForStomach + " douleur de niveau : " + level);
-        } else {
-            System.out.println("ok je vérifie les données sur cette douleur : " + locationHurtForStomach);
-            String ladderOfHurt = input.nextLine();
-            System.out.println("vous avez mal au niveau : " + ladderOfHurt);
-        }
-    }
-
-    private static void diagnostiqueHead(String locationHurtForHead, Integer level) {
-        if (level != null) {
-            System.out.println("ok je vérifie les données sur cette douleur : " + locationHurtForHead + " douleur de niveau : " + level);
-        } else {
-            System.out.println("ok je vérifie les données sur cette douleur : " + locationHurtForHead);
-            System.out.println("Sur 9 a combien estimez-vous votre douleur ?");
-            String ladderOfHurt = input.nextLine();
-            switch (ladderOfHurt) {
-                case "9":
-                    printDouleur(9);
-                    break;
-                case "8":
-                    printDouleur(8);
-                    break;
-                case "7":
-                    printDouleur(7);
-                    break;
-                case "6":
-                    printDouleur(6);
-                    break;
-                case "5":
-                    printDouleur(5);
-                    break;
-                case "4":
-                    printDouleur(4);
-                    break;
-                case "3":
-                    printDouleur(3);
-                    break;
-                case "2":
-                    printDouleur(2);
-                    break;
-                case "1":
-                    printDouleur(1);
-                    break;
-            }
-        }
-    }
-
-    private static void printDouleur(int douleur) {
-        System.out.println("votre douleur est de niveau " + douleur);
     }
 }
